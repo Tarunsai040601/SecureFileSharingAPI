@@ -58,3 +58,45 @@ src/
 ├── utils/
 │   └── errorHandler.js        # Global error handler
 └── server.js                  # App entry point
+
+
+
+⚙️ Installation & Setup
+
+
+Node.js
+
+MongoDB Atlas account (or local MongoDB)
+
+npm 
+
+
+🔐 Environment Variables
+
+Create a .env file in the root directory. Refer to .env.example:
+
+PORT=5000
+
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/filedb
+
+JWT_SECRET=your_super_secret_key
+
+JWT_EXPIRES_IN=7d
+
+NODE_ENV=development
+
+
+🚀 Run Commands
+
+npm run dev      # Start with nodemon (development)
+
+npm start        # Start in production mode
+
+npm test         # Run tests (if configured)
+
+📡 API Endpoints🔑 Authentication
+
+Register — POST /api/auth/register
+
+Login — POST /api/auth/login
+
