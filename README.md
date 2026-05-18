@@ -88,15 +88,34 @@ NODE_ENV=development
 
 🚀 Run Commands
 
+
 npm run dev      # Start with nodemon (development)
 
 npm start        # Start in production mode
 
 npm test         # Run tests (if configured)
 
+
 📡 API Endpoints🔑 Authentication
+
 
 Register — POST /api/auth/register
 
 Login — POST /api/auth/login
 
+
+📂 File Management
+
+
+All file routes require Authorization: Bearer <token> header.
+
+Create File — POST /api/files
+Get All Files — GET /api/files
+
+
+🌐 Deployment
+This application is deployed on Render using MongoDB Atlas as the cloud database.
+
+Live API URL: https://securefilesharingapi-2.onrender.com
+
+GitHub Repository: https://github.com/YOUR_USERNAME/secure-file-sharing-api
